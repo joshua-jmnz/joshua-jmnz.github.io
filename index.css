@@ -1,0 +1,97 @@
+:root {
+    --main-color: #15172a;
+    --back-color: #f5f6f7;
+    
+}
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    min-width: 400px;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --back-color: #1a1d20;   
+    }
+    *{
+        color:white;
+    }
+}
+.navbar{
+    padding: 2rem;
+    background-color: var(--main-color);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: rgba(255, 255, 255, .6);
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link:active{
+    color: white;
+    font-weight: bolder;
+}
+.navbar-nav .active{
+    color: white;
+    font-weight: bolder;
+}
+section{
+    display: flex;
+    background-color: var(--back-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero{
+    background-color: var(--back-color);
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: gray;
+}
+.hero-inferior{
+    padding: 3rem;
+}
+.perfil-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.skills-img{
+    width: 115px;
+    height: 105px;
+    margin: 20px;
+}
+.info{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* ADAPTABLE RESPONSIVE */
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-img{
+        max-width: 600px;
+    }
+}
